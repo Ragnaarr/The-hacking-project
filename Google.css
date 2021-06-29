@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'noto_monoregular';
+    src: url('NotoMono-Regular-webfont.eot');
+    src: url('NotoMono-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NotoMono-Regular-webfont.woff2') format('woff2'),
+         url('NotoMono-Regular-webfont.woff') format('woff'),
+         url('NotoMono-Regular-webfont.ttf') format('truetype'),
+         url('NotoMono-Regular-webfont.svg#noto_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Liens permettant au navigateur de l'utilisateur de télécharger les bonnes polices */
+
+body
+{
+    font-family: noto_monoregular, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Initialisation des différentes policie d'écriture dont une compatible avec tout type de navigateur en cas de problèmes. iNITIALISATION DU pADDING ET DU MARGIN */
+
+.loupe{
+    width: 3.5%;
+}
+
+/*Les images de micro et de loupe etant trop gros j'ai du les reduire*/
+
+.micro{
+    width: 3.5%;
+}
+
+.box
+{
+    border: 0.1px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    height: 30px;
+    width: 500px;
+    box-shadow: 1px 1px 5px #888;
+    border-radius: 40px;
+}
+
+/* Je crée le contour de la barre de recherche ainsi que sa position */
+
+.input-box
+{
+    margin-left: 15px;
+    width: 420px;
+    height: 25px;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Repositionnement du logo Google */
+
+.logo2{
+    padding-bottom: 250px;
+}
+
+.button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Positionnement des boutons qui se trouvent sous la barre de recherche + création du cadre autour */
+
+.btn{
+    margin: 150px 10px 0 0;
+    font-size: 15px;
+    padding: 8px 15px;
+    border: none;
+    color: #6e6e6e;
+    border-radius: 5px;
+}
+.btn:hover{
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+}
+
+.bas{
+    position: absolute;
+    top: 65%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+}
+
+/*Repositionnement du lien hypertexte pour passer google en anglais*/
+
+.navbar{
+    width: 5rem;
+    position: fixed;
+    top: 0%;
+    left: 90%;
+    bottom: 0%;
+    background: var(--navbar-background-color);
+    box-shadow: rgba(12, 43, 30, 0.2) 0 4px 14px;
+}
+:root{
+    --navbar-background-color:  #f2f2f2;
+}
+
+/*Ce sont les bribes de code CSS de la navbar que je n'ai pas pu terminer par manque de temps. Ici j'ai pu la positionner ainsi que créer son background*/
